@@ -1,7 +1,6 @@
 (set-env!
  :source-paths    #{"src/cljs"}
- :resource-paths  #{"resources"}
- :target-path  "www"
+ :resource-paths  #{"resources" "platforms/browser/www"}
  :dependencies '[[adzerk/boot-cljs      "0.0-2814-4" :scope "test"]
                  [adzerk/boot-cljs-repl "0.1.9"      :scope "test"]
                  [adzerk/boot-reload    "0.2.4"      :scope "test"]
@@ -50,4 +49,4 @@
 
 (deftask devbuild
   []
-  (comp (development)))
+  (comp (development) (build)))
