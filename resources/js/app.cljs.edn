@@ -1,0 +1,2 @@
+{:require  [cordova.app]
+ :init-fns [cordova.app/init]}
