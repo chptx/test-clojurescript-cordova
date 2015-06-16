@@ -17,6 +17,10 @@ You will need [boot][1] and [cordova][2] installed.
 ## Running
 
 ```bash
+git clone https://github.com/chptx/test-clojurescript-cordova
+
+cd test-clojurescript-cordova
+
 #change resource or html files
 cordova prepare
 
